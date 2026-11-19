@@ -1,0 +1,20 @@
+#include <stdio.h>
+#include <string.h>
+
+struct student {
+    int ID;
+    char name[20];
+    float grade;
+};
+
+void main(void) {
+    struct student s1 = {100, "Jiwoo", 4.3};
+
+    s1.ID = 101;
+    strcpy(s1.name, "Jiwoo2");
+    s1.grade = 2.2;
+
+    printf("ID : %d\n", s1.ID);
+    printf("name : %s\n", s1.name);
+    printf("grade : %f\n", s1.grade);
+}
